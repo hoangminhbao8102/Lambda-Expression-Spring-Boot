@@ -1,1 +1,19 @@
+# Maven/Java
 /LambdaSpringBootDemo/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+dependency-reduced-pom.xml
+*.iml
+*.class
+*.log
+
+# IDE
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
