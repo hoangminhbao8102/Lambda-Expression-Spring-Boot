@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Products Stream Demos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"/>
+</head>
+<body>
+<h1>Products - map/filter/reduce & Comparator</h1>
+<nav><a href="/">Trang chủ</a></nav><hr/>
+
+<section>
+  <h3>Laptops sort by price</h3>
+  <pre th:text="${data.laptopsSortedByPrice}">[]</pre>
+
+  <h3>Total in stock</h3>
+  <p th:text="${data.totalInStock}">0</p>
+
+  <h3>Sum price of Phones</h3>
+  <p th:text="${data.sumPhonePrice}">0</p>
+
+  <h3>Names uppercase</h3>
+  <pre th:text="${data.namesUpper}">[]</pre>
+</section>
+</body>
+</html>

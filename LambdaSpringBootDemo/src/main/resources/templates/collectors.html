@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Collectors Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"/>
+</head>
+<body>
+<h1>Collectors - groupingBy / partitioningBy</h1>
+<nav><a href="/">Trang chủ</a></nav><hr/>
+
+<h3>groupingBy category</h3>
+<pre th:text="${data.groupingByCategory}">map</pre>
+
+<h3>partitioningBy inStock</h3>
+<pre th:text="${data.partitioningByInStock}">map</pre>
+
+<h3>avg price by category</h3>
+<pre th:text="${data.avgPriceByCategory}">map</pre>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Students</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"/>
+</head>
+<body>
+<h1>Students - dữ liệu mẫu</h1>
+<nav><a href="/">Trang chủ</a></nav><hr/>
+
+<table>
+  <thead>
+  <tr><th>ID</th><th>Name</th><th>GPA</th><th>Major</th><th>Year</th></tr>
+  </thead>
+  <tbody>
+  <tr th:each="s : ${students}">
+    <td th:text="${s.id}">1</td>
+    <td th:text="${s.name}">An</td>
+    <td th:text="${s.gpa}">3.2</td>
+    <td th:text="${s.major}">CS</td>
+    <td th:text="${s.year}">3</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

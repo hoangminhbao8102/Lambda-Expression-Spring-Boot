@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Async & CompletableFuture</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"/>
+</head>
+<body>
+<h1>CompletableFuture + Lambda</h1>
+<nav><a href="/">Trang chủ</a></nav><hr/>
+
+<p>Tổng f1 + f2: <b th:text="${async['f1+f2']}">2</b></p>
+<p>Thời gian (ms): <b th:text="${async['durationMs']}">0</b></p>
+<small>Lưu ý: demo mang tính minh họa; đừng lạm dụng parallel/async nếu không cần.</small>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Lambda Expression trong Java</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"/>
+  <style>code{background:#f6f8fa;padding:2px 6px;border-radius:4px}</style>
+</head>
+<body>
+<h1 th:text="${title}">Lambda Expression trong Java</h1>
+
+<nav>
+  <a href="/">Trang chủ</a> |
+  <a href="/products">Products (map/filter/reduce)</a> |
+  <a href="/collectors">Collectors</a> |
+  <a href="/students">Students</a> |
+  <a href="/async">Async</a>
+</nav>
+<hr/>
+
+<h2>Các functional interfaces cơ bản</h2>
+<pre th:text="${#temporals.format(T(java.time.LocalTime).now(),'HH:mm:ss')}">time</pre>
+<pre th:text="${basic}">basic</pre>
+
+<h2>Optional demo</h2>
+<p th:text="${optionalHello}">Hello, Anonymous</p>
+<form method="post" action="/hello">
+  <input name="name" placeholder="Nhập tên (có thể để trống)"/>
+  <button type="submit">Chào</button>
+</form>
+
+<h2>Composition</h2>
+<p><code>trim → toUpperCase → exclaim</code></p>
+<p th:text="${composition}">LAMBDA ROCKS!</p>
+
+<h2>Parallel Stream</h2>
+<p>Số sinh viên honor (GPA ≥ 3.6) (parallel): <b th:text="${honorCount}">0</b></p>
+
+<footer><hr/><small>Spring Boot 3.3.x • Java 17 • Thymeleaf</small></footer>
+</body>
+</html>
